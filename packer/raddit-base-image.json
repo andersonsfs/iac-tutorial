@@ -14,9 +14,8 @@
 	],
 	"provisioners": [
 		{
-			"type": "shell",
-			"script": "{{template_dir}}/../scripts/configuration.sh",
-			"execute_command": "sudo {{.Path}}"
+			"type": "ansible",
+			"script": "{{template_dir}}/../ansible/configuration.yml",
 		}
 	]
 }
